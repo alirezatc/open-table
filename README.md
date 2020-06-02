@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Technical Questions
+1. I spent 10 hours to deploy this project. I would use Jest for test.
+2. The greatest feature of React in my point of view is adding the Virtual DOM and only update the component that is being updated
+3. If I bump into a slow performance in the software the first thing that I check is network tab of the browswer to see if any requests takes more than usual time. However, performance testing is a comprehensive topic and should be considered in the Unit Testing. I read an article about performance (https://stackify.com/ultimate-guide-performance-testing-and-software-testing/) some of them are (Load testing, Stress testing, Soak testing, Spike testing, Breakpoint testing, Configuration testing, Isolation testing, Internet testing. Moreover, for the front end, I have previously used gtmetrix and pingdom and resolved their reported issues.
+4. I would double check the image_url, put the city, state, area, and country inside another object called location or address.
