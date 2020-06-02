@@ -2,7 +2,7 @@ const API_URL = 'http://opentable.herokuapp.com/api/restaurants';
 
 const RestaurantsService = {
   search(city, refine) {
-    return fetch(`${API_URL}?city=${city}`)
+    return fetch(`${API_URL}?city=${city}&name=${refine}`)
     .then(response => { //since fetch returns a promise, to consume that promise we do a then call 
         return response.json() // the fetch API has a raw response, so, you need to parse it
       }).then(jsonResponse => { //the json method is also asynchronous, so it returns a promise, so we need another then

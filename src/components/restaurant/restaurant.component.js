@@ -2,6 +2,14 @@ import React from 'react';
 import './restaurant.css';
 
 class Restaurant extends React.Component {
+  priceViewer(n){
+    let price = ''
+    for(let i = 0; i < n; i++) {
+      price+='$';
+    }
+    return price;
+  }
+  
   render() {
     const { business } = this.props;
 
@@ -10,18 +18,15 @@ class Restaurant extends React.Component {
         <div className="image-container">
           <img src={business.imageSrc} alt='' />
         </div>
-        <h2>{business.name}</h2>
         <div className="Restaurant-information">
+          <h2>{business.name}</h2>
           <div className="Restaurant-address">
             <p>{business.address}</p>
-            <p>{business.city}</p>
-            <p>{`${business.state} ${business.zipCode}`}</p>
+            <p>{`${business.state}. ${business.city} ${business.zipCode}`}</p>
             <h3>{business.area}</h3>
-
           </div>
-          <div className="Restaurant-reviews">
-            <h3 className="rating">{business.price}</h3>
-            <p>{`${business.phone} reviews`}</p>
+          <div className="Restaurant-price">
+            <h3 className="price">{this.priceViewer(business.price)}</h3>
           </div>
         </div>
       </div>

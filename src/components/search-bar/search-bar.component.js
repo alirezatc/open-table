@@ -7,13 +7,11 @@ class SearchBar extends React.Component {
     this.state = {
       city: '',
       refine: '',
-
     }
 
     this.handleCityChange = this.handleCityChange.bind(this);
     this.handleRefineChange = this.handleRefineChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
-
   }
 
   handleCityChange(e) {
@@ -21,31 +19,27 @@ class SearchBar extends React.Component {
   }
 
   handleRefineChange(e) {
-    this.setState({ refine: e.target.value});
+    this.setState({ refine: e.target.value });
   }
 
   handleSearch(e) {
     this.props.searchYelp(this.state.city, this.state.refine);
-    
+
     e.preventDefault();
   }
 
   render() {
     return (
-      <div className="SearchBar">
-        <div className="SearchBar-sort-options">
-          <ul>
-            {/* {this.renderSortByOptions()} */}
-          </ul>
-        </div>
+      <form className="SearchBar">
         <div className="SearchBar-fields">
           <input placeholder="Enter city" onChange={this.handleCityChange} />
           <input placeholder="Refine: name/ address/ area" onChange={this.handleRefineChange} />
         </div>
         <div className="SearchBar-submit">
-          <a href="www.#.com" onClick={this.handleSearch}>Let's Go</a>
+          {/* <input type="submit" placeholder="Let's Go" onClick={this.handleSearch} /> */}
+          <button type="submit" placeholder="Let's Go" onClick={this.handleSearch}>Let's Go</button>
         </div>
-      </div>
+      </form>
     )
   }
 
