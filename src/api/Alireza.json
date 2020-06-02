@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 120000,
+    "picture": "https://media-exp1.licdn.com/dms/image/C5603AQFPLINrZYpqFA/profile-displayphoto-shrink_400_400/0?e=1596672000&v=beta&t=g2uHG0nIk5OIBQYqozM2n-c6bYYFVuK5gxAZ7K4XlO4",
+    "name": "Alireza Tayari",
+    "gender": "Male",
+    "company": "SLG",
+    "email": "alireza.tc@gmail.com",
+    "phone": "+1 604-727-6565",
+    "address": "Toronto",
+    "about": "Persevered Front End Developer",
+    "latitude": 43.6532, 
+    "longitude": 79.3832,
+    "tags": [
+      "Front End Development",
+      "UI Development",
+      "UI/UX Design"
+    ],
+    "friends": [
+      {
+        "id": 126478,
+        "name": "Iman"
+      },
+      {
+        "id": 126479,
+        "name": "Kas"
+      }
+    ],
+    "greeting": "Hello, welcome to Alireza Tayari json world!",
+    "favoriteFruit": "banana"
+  }
+]
