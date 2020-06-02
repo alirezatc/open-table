@@ -2,14 +2,14 @@ import React from 'react';
 import './restaurant.css';
 
 class Restaurant extends React.Component {
-  priceViewer(n){
+  priceViewer(n) {
     let price = ''
-    for(let i = 0; i < n; i++) {
-      price+='$';
+    for (let i = 0; i < n; i++) {
+      price += '$';
     }
     return price;
   }
-  
+
   render() {
     const { business } = this.props;
 

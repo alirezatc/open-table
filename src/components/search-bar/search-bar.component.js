@@ -15,11 +15,13 @@ class SearchBar extends React.Component {
   }
 
   handleCityChange(e) {
-    this.setState({ city: e.target.value });
+    let trimmedCity = e.target.value.trim();
+    this.setState({ city: trimmedCity });
   }
 
   handleRefineChange(e) {
-    this.setState({ refine: e.target.value });
+    let trimmedRefine = e.target.value.trim();
+    this.setState({ refine: trimmedRefine });
   }
 
   handleSearch(e) {

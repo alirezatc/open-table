@@ -27,13 +27,16 @@ input:focus {
 }
 
 h1 {
-  padding: .5rem 0;
   text-align: center;
-  background-color: #bf9748;
-  font-family: Poppins, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: #fff;
+    background-color: #bf9748;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 575px) {
