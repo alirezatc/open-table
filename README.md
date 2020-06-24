@@ -92,7 +92,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
       "UI Development",
       "UI/UX Design"
     ],
-    "key skills": ["HTML5", "CSS3", "Bootstrap", "ES6", "JavaScript", "React", "MVC", "jQuery", "AngularJS", "wordpress", "GIT", "TFS", "Sourcesafe", "Piwik", "project management", "YouTrack", "responsive web design", "mobie first"],
+    "key skills": ["HTML5", "CSS3", "Bootstrap", "ES6", "JavaScript", "React", "MVC", "jQuery", "AngularJS", "wordpress", "GIT", "TFS", "Piwik", "project management", "YouTrack", "responsive web design", "mobile first"],
     "friends": [
       {
         "id": 126478,
